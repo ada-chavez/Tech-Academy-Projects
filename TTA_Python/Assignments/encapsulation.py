@@ -14,7 +14,7 @@ class User:
                 self.__ssn = '111-11-1111' #private
 
         def getPassword(self):
-                print("Name: {} \nEmail: {} \nPassword: {} \nSSN: {}".format(self.name,self.email,self._password,self.__ssn))
+                print("Name: {} \nEmail: {} \nPassword: {} \nSSN: {}\n".format(self.name,self.email,self._password,self.__ssn))
 
         def setPassword(self, protected):
                 self._password = protected
@@ -30,7 +30,7 @@ user_1 = User('','','','')
 user_1.setPassword('ilovecats321')
 user_1.getPassword()
 
-
+# object that makes use of a private attribute
 user_2 = User('','','','')
 user_2.setSsn('123-11-1231')
 user_2.getSsn()
