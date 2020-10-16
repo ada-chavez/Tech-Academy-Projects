@@ -8,22 +8,34 @@
 
 class User:
         def __init__(self, name, email, password, ssn):
-            self.name = 'unknown'
-            self.email = 'unknown'
-            self._password = 'password' #protected
-            self.__ssn = '111-11-1111' #private
+                self.name = 'unknown'
+                self.email = 'unknown'
+                self._password = 'password' #protected
+                self.__ssn = '111-11-1111' #private
 
         def getPassword(self):
-            print("Name: {} \nEmail: {} \nPassword: {} \nSSN: {}".format(self.name,self.email,self._password,self.__ssn))
+                print("Name: {} \nEmail: {} \nPassword: {} \nSSN: {}".format(self.name,self.email,self._password,self.__ssn))
 
-        def setPassword(self, private):
-            self._password = private
+        def setPassword(self, protected):
+                self._password = protected
 
+        def getSsn(self):
+                print("Name: {} \nEmail: {} \nPassword: {} \nSSN: {}".format(self.name,self.email,self._password,self.__ssn))
+
+        def setSsn(self,private):
+                self.__ssn = private
 
 # object that makes use of a protected attribute
 user_1 = User('','','','')
 user_1.setPassword('ilovecats321')
 user_1.getPassword()
+
+
+user_2 = User('','','','')
+user_2.setSsn('123-11-1231')
+user_2.getSsn()
+
+
 
 
 
