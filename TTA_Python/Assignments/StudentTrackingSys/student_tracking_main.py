@@ -44,5 +44,5 @@ class ParentWindow(Frame):
 
 if __name__ == "__main__":
     root = tk.Tk() # instatiated tkinter and named it root
-    App = ParentWindow() # attached Tkinter to ParentWindow and attached to App
+    App = ParentWindow(root) # attached Tkinter to ParentWindow and attached to App
     root.mainloop() # this allows the window to stay open until the user closes it
