@@ -9,9 +9,9 @@ import gui_gui
 
 
 def browseFiles(self):
-    global folderPath
-    filename = filedialog.askdirectory()
-    print(filename)
+    folder_path = filedialog.askdirectory() #gets the path to chosen directory
+    self.path_var.set(folder_path) #sets path to variable in gui back end
+    print(folder_path)
 
 
     

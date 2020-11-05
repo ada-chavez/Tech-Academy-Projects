@@ -21,12 +21,15 @@ def load_gui(self):
     self.closeButton = Button(self.master,text="Close Program", width=13, height=2)
     self.closeButton.grid(row=3,column=1,padx=(27,10),pady=(10,2),sticky=S+E)
 
+    self.path_var = StringVar()
+
     #entry boxes
-    self.fileOne = Text(self.master, width=50, height=1)
+    self.fileOne = Entry(self.master, textvariable=self.path_var, width=50)
     self.fileOne.grid(row=1,column=1, padx=(20,10),pady=(40,0))
 
-    self.fileTwo = Text(self.master, width=50, height=1)
+    self.fileTwo = Entry(self.master, width=50)
     self.fileTwo.grid(row=2,column=1, padx=(20,10),pady=(15,0))
+
 
 
 
