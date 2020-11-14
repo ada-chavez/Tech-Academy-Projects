@@ -1,0 +1,103 @@
+html {
+    font-size: 70%;
+    box-sizing: border-box;
+}
+
+/* Applies margin, padding, and box sizing */
+/* before and after all elements in the DOM */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit; /* gets it's sizing from it's parent */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/*Calculator container*/
+.calculator {
+    border: 1.2px solid darkslategray;
+    border-radius: 7px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+}
+
+/*Screen container*/
+.calculator-screen {
+    width: 100%;
+    font-size: 5rem;
+    height: 80px;
+    border: none;
+    background-color: black;
+    color: white;
+    text-align: right;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 7px 7px 0px 0px;
+}
+
+
+button {
+    height: 70px;
+    border-radius: 20px;
+    border: 1px solid darkslategray;
+    background-color: transparent;
+    font-size: 3.2rem;
+    color: black;
+    background-image: linear-gradient(to bottom,transparent,transparent 50%,
+        rgba(0,0,0,.06));
+    text-shadow: 0 1px rgba(255,255,255,.4);
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,.05), inset 0 1px 0 0 
+        rgba(255,255,255,.05), inset 0 -1px 0 0 rgba(255,255,255,.05),
+        0 1px 0 0 rgba(255,255,255,.05);
+}
+
+button:hover {
+    background-color: #e1e1e1;
+}
+
+
+.operator {
+    color:black;
+    background-image: linear-gradient(to bottom,transparent,transparent 50%,
+        rgba(0, 0, 0, 0.5));
+    background-color: rgb(214, 199, 65);
+}
+
+.operator:hover {
+    background-color: rgb(214, 179, 65) ;
+}
+
+/* AC button */
+.all-clear {
+    background-color: rgb(216, 90, 164);
+    border-color: darkslategray;
+    color: #fff;
+}
+
+.all-clear:hover {
+    background-color: rgb(119, 23, 103);
+}
+
+.equal-sign {
+    background-color: rgb(20, 145, 47);
+    border-color: darkslategray;
+    color: #fff;
+    height: 100%;
+    grid-area: 2 / 4 / 6 / 5; /* line-based placement of grid items within a grid*/
+    /* grid-row-start / grid-coloumn-start / gride-row-end / grid-column-end */
+
+}
+
+.equal-sign:hover {
+    background-color: rgb(74, 206, 113);
+}
+
+.calculator-keys {
+    display: grid; /* sets the container in a grid */
+    grid-template-columns: repeat(4, 1fr); /* specify number and widths of column in grid */
+                                            /* 4 columns with 1 part of the available space */
+    grid-gap: 20px;
+    padding: 20px;
+}

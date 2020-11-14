@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Basic jQuery</title>
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    </head>
+    <body>
+        <script>
+            $(document).ready(function(){
+                $("html").append(
+                    "<body>\
+                        <div id='container'>\
+                            <div id='inner'>\
+                                <h1>Basic jQuery</h1>\
+                                <p id='1'>Paragraph 1</p>\
+                                <p id='2'>Paragraph 2</p>\
+                                <p id='3'>Paragraph 3</p>\
+                                <h1 id='4'> Hello</h1>\
+                            </div>\
+                        </div>\
+                    </body>"
+                );
+                //sets paragraph 2 to red
+                $("#2").css({"color":"red"});
+
+                //hides h1 when paragraph 3 is clicked
+                $("#3").click(function() {
+                    $('h1').hide('slow');
+                });
+
+                //multiple events on paragraph 1
+                $("#1").on({
+                    'click':function() { console.log("clicked!"); },//displays "clicked" to console when paragraph 1 is clicked
+                    'mouseover': function() {console.log("hovered!"); } //displays "hovered!" to console when paragraph 1 is hovered
+                });
+                //fades the h1 id='4' over 1 second
+                $("#4").fadeToggle(1000);
+
+            });
+
+
+        </script>
+    </body>
+</html>

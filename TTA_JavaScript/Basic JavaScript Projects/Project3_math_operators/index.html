@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Basic  HTML Template</title>
+        <meta charset="utf-8">
+        <script src="JS/main.js"></script>
+	</head>
+	<body>
+<!--ADDITION-->
+        <h3>Addition</h3>
+        <!--Calls the additionFunction and displays the result when clicked-->
+        <p id="Math" onclick="additionFunction()">Click here to get the sum of 10 and 3</p>
+
+
+<!--SUBTRACTION-->
+        <h3>Subtraction</h3>        
+        <p>Write something in the field to trigger a subtraction function</p>
+
+        <!--Input field that calls on the subtractionFunction-->
+        <input type="text" oninput="subtractionFunction()">
+
+        <!--Displays the result of the subtractionFunction-->
+        <p id="minus"></p>
+
+<!--MULTIPLICATION-->
+        <h3>Multiplication</h3>
+        <p>The multiplication function is triggered when the user is pressing a key in the input field.</p>
+
+        <!--Input field that calls the multiplyFunction when a key is pressed in the field-->
+        <input type="text" onkeypress="multiplyFunction()">
+
+        <!--Displays the result of the multiplyFunction-->
+        <p id="multiply"></p>
+
+<!--DIVISION-->
+        <h3>Division</h3>
+        <!--Calls the divisionFunction when button is clicked and displays it-->
+        <button id="divide" onclick="divisionFunction()">Click here to trigger a division function</button>
+
+<!--MULTIPLE OPERATORS-->
+        <h3>Multiple Operators</h3>
+        <!--Calls the moreMath function when button is clicked-->
+        <button onclick="moreMath()">Click here to trigger the moreMath function!</button>
+        <!--Displays the result of the moreMath function when button is clicked-->
+        <p id="math"></p>
+
+<!--MODULUS-->        
+        <h3>Modulus</h3>
+        <!--Calls the modulusFunction and displays the result when clicked-->
+        <p id="mod" onclick="modulusFunction()">Click here to get the remainder of 100/26</p>
+   
+<!--NEGAATION-->   
+        <h3>Negation Operator</h3>
+        <!--Calls the negationOperator function and displays the result when clicked-->
+        <p id="negate" onclick="negationOperator()">Click here to display a negation function</p>
+
+<!--INCREMENT AND DECREMENT-->        
+        <h3>Increment and Decrement Operator</h3>
+        <!--Calls the inc_dec function when button is clicked-->
+        <button onclick="inc_dec()">Click here to trigger a function</button>
+        <!--Displays the result of the inc_dec function when button is clicked-->
+        <p id="number"></p>
+
+<!--MATH OBECT METHOD-->
+        <h3>Math Object Method: Highest Value</h3>
+        <!--Calls the maxNum function and displays the result when clicked-->
+        <p id="max" onclick="maxNum()">Click here</p>
+
+    </body>
+</html>

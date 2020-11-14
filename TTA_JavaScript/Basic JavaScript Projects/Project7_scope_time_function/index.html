@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Project 7 Scope Time Function</title>
+        <meta charset="utf-8">
+        <script src="JS/main.js"></script>
+	</head>
+	<body>
+        <h3>Global Variable</h3>
+        <!--Calls subtraction_function_1 and displays the result when clicked-->
+        <p id="sub_1" onclick="subtraction_function_1()">Click here</p>
+
+        <h3>Local Variable</h3>
+        <!--Calls subtraction_function_2 and displays the result when clicked-->
+        <p id="sub_2" onclick="subtraction_function_2()">Click here</p>
+
+        <h3>Intentional Error: Calling a global variable when it is a local variable</h3>
+        <!--Calls subtraction_function_3 and displays the result when clicked-->
+        <p id="sub_3" onclick="subtraction_function_3()">Click here</p>
+
+        <h3>If statement with Date Method</h3>
+         <!--Calls get_Date function and displays a reminder to eat breakfast if it's before noon -->
+        <p id="eat" onclick="get_Date()">Click here</p>
+
+        <h3>My own if statement</h3>
+        <!--Calls same_word function and displays result when trigger-->
+        <p id="meow" onclick="same_word()">Click here</p>
+
+        <h3>If/else statement</h3>
+        <p>Have you drank water today? Write yes or no</p>
+        <!--Asks user to input yes or no-->
+        <input id="drink" value="">
+        <!--Displays result-->
+        <p id="stay_hydrated"></p>
+        <!--Calls water_function when triggered-->
+        <button onclick="water_function()">Submit here</button>
+
+        <h3>Else If Statement</h3>
+        <!--Calls the Time_function and displays result when triggered-->
+        <p id="Time_of_day"></p>
+        <button onclick="Time_function()">Click here to get the time</button>
+
+                
+	</body>
+</html>
