@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta charset="utf-8">
+        <title>One-page-website</title>
+        <link rel="stylesheet" href="./css/one_page_website.css">
+        <script src="JS/one_page_website.js" defer></script>
+	</head>
+	<body>
+
+            <!-- NAV -->
+            <div class="wrap">
+                <div class="menu-container">
+                    <ul class="menu">
+                        <a href="#home" id="link"><li>HOME</li></a>
+				        <a href="#menu" id="link"><li>MENU</li></a>
+				        <a href="#contact" id="link"><li>CONTACT</li></a>
+                    </ul>
+                </div>
+            </div>
+            <!-- END NAV -->
+
+            <!-- HOME -->
+            <div id="home">
+                <div class="container">
+                    <div class="text-center">
+                        <span class="head-main">Araw-Araw </span>
+                        <br><span class="head-main">Filipino Treats</span>
+                    </div>
+                </div>
+            </div>
+            <!-- END HOME -->
+
+            <!-- MENU -->
+            <section id="menu">
+                <div class="container">
+                    <h1>MENU</h1>
+                    <div class="flex-container">
+
+                        <!-- PHOTO CONTAINER 1 -->
+                        <div class="row">
+                            <div class="column">
+                                <img src="./images/thumb/thumbnail_1.png" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="Biko">
+                                <div class="photo-overlay">
+                                    <h3>Biko</h3>
+                                    <p>Sticky Rice cooked in coconut milk and topped with coconut jam</p>
+                                </div>
+                            </div>
+                        
+                        <!-- END PHOTO CONTAINER 1 -->
+
+                        <!-- PHOTO CONTAINER 2 -->
+                        
+                            <div class="column">
+                                <img src="./images/thumb/thumbnail_2.png"onclick="openModal();currentSlide(2)" class="hover-shadow" alt="Ube queso pan de sal">
+                                <div class="photo-overlay">
+                                    <h3>Ube Queso Pan de Sal</h3>
+                                    <p>Ube flavored bread filled with mild cheese</p>
+                                </div>
+                            </div>
+                        
+                        <!-- END PHOTO CONTAINER 2 -->
+
+                        <!-- PHOTO CONTAINER 3 -->
+                        
+                            <div class="column">
+                                <img src="./images/thumb/thumbnail_3.png" onclick="openModal();currentSlide(3)" class="hover-shadow" alt="Taho">
+                                <div class="photo-overlay">
+                                    <h3>Taho</h3>
+                                    <p>Soft silken tofu with tapioca pearls in a sweet sauce</p>
+                                </div>
+                            </div>
+                        
+                        <!-- END PHOTO CONTAINER 3 -->
+
+                        </div>
+
+                    <!-- THe Modal/Lightbox -->
+                    <div id="myModal" class="modal">
+                        <span class="close cursor" onclick="closeModal()">&times;</span>
+                        <div class="modal-content">
+                    
+                            <div class="mySlides">
+                                <div class="numbertext">1 / 3</div>
+                                <img src="./images/Thumb/thumbnail_1.png">
+                            </div>
+                        
+                            <div class="mySlides">
+                                <div class="numbertext">2 / 3</div>
+                                <img src="./images/Thumb/thumbnail_2.png">
+                            </div>
+                        
+                            <div class="mySlides">
+                                <div class="numbertext">3 / 3</div>
+                                <img src="./images/Thumb/thumbnail_3.png">
+                            </div>
+
+                            <!-- Next/previous controls -->
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                            <!-- Caption text -->
+                            <div class="caption-container">
+                                <p id="caption"></p>
+                            </div>
+
+                            <!-- Thumbnail image controls -->
+                            <div class="column">
+                                <img class="demo" src="./images/Thumb/thumbnail_1.png" onclick="currentSlide(1)" alt="Biko">
+                            </div>
+                        
+                            <div class="column">
+                                <img class="demo" src="./images/Thumb/thumbnail_2.png" onclick="currentSlide(2)" alt="Ube queso pan de sal">
+                            </div>
+                        
+                            <div class="column">
+                                <img class="demo" src="./images/Thumb/thumbnail_3.png" onclick="currentSlide(3)" alt="Taho">
+                            </div>                        
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+            <!-- END MENU -->
+
+            <!-- CONTACT -->
+            <section id="contact">
+                <div class="container">
+                    <div class="heading-padding">
+                        <h1 class="heading-padding">Contact</h1>
+                        <div class="order">
+                            <h2><span>Your Filipino treats are just around the corner.</span>
+                                <br>Order today!
+                            </h2>
+                            <p class="order-text">
+                                Please provide us with your contact information.                                
+                            </p>
+                            <div class="form-order">
+                                <form action="" method="post">
+                                    <input class="ordr" type="text" value="" placeholder="First Name">
+                                    <input class="ordr" type="text" value="" placeholder="Last Name">
+                                    <input class="ordr" type="text" value="" placeholder="Email Address">
+                                    <input class="ordr" type="text" value="" placeholder="Phone Number">
+                                    <div class="form-spacer">
+                                        <label class="terms">Terms and Conditions</label>                                
+                                    </div>
+                                    <div class="submit">
+                                        <input type="submit" value="Submit">
+                                    </div>
+                                </form>
+                            </div>                           
+                        </div>
+                        
+                    </div>
+                </div>                
+            </section>
+            <!-- END CONTACT -->
+
+            <!-- FOOTER -->
+            <div id="footer">
+                www.arawaraw.com &nbsp;&nbsp; &copy; 2020
+            </div>
+            <!-- END FOOTER -->
+
+	</body>
+</html>

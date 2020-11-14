@@ -1,0 +1,8 @@
+/* Styles p elements*/
+p {
+	color: #008080;
+	background: #F5F5F5;
+	font-size: 15;
+	text-align: center;
+	text-shadow: 2px 2px #191970
+}

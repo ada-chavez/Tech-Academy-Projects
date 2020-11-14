@@ -1,0 +1,204 @@
+/* Body */
+body {
+    margin: 0%;
+}
+
+/* Navbar */
+.navbar {
+    overflow: hidden;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+/* Navbar text */
+.navbar a {
+    float: left;
+    display: block;
+    color:#262228;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Georgia, Avant Garde, Helvetica;
+    font-size: 20px;
+    text-align: center; 
+}
+
+/* Navbar hover effect */
+.navbar a:hover {
+    background-color: #41b5f3  ;
+    color: black;
+    font-weight: bold;
+}
+
+/* Navbar home button */
+.navbar a.active {
+    background-color: #0375B4 ;
+}
+
+/* Video */
+#typing_video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    z-index: -1;
+}
+
+/* Text over the video */
+.video_text {
+    background: rgb(255, 255, 255, .55);
+    color: #000;
+    width: 100%;
+    padding: 20px;
+    margin-top: 23%;
+}
+
+/* Table */
+* {
+    box-sizing: border-box;
+}
+
+
+.column_1 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 3%;
+    height: 500px;
+    background-color: #98b87f;
+}
+
+.column_2 {
+    float: left;
+    width: 50%;
+    padding:10px;
+    padding-top: 1.9%;
+    height: 500px;
+    background-color: #ddc256;
+}
+
+.column_3 {
+    float: left;
+    width: 50%;
+    padding:10px;
+    padding-top: 3.5%;
+    height: 500px;
+    background-color: #ddc256;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Heading 1 elements */
+h1 {
+    text-transform: uppercase;
+    font-family: Georgia, "Trebuchet MS", Optima;
+    text-align: center;
+    margin-top: 3%;
+    color: #262228;
+}
+
+/* Paragraph elements */
+p {
+    font-family:Georgia, Perpetua, Rockwell Extra Bold;
+    text-align: justify;
+    letter-spacing: 1px;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+center {
+	font-family: Georgia,Perpetua, Rockwell Extra Bold;
+	text-align: center;
+	letter-spacing: 1px;
+	font-size: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/* Anchor elements*/
+a {
+    color: #0375B4;
+}
+
+
+/* image elements */
+img {
+    border-radius: 10%;
+    max-width: 100%;
+    height: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+/* Contact form */
+input[type=text] { /* This covers the input sections of the contact form */
+	width: 100%;
+	padding: 12px;
+    border: 1px solid #ccc; /* We are setting a solid border and its colors */
+    border-radius: 4px; 
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical; /* This specifies how an element is resized; vertical allows the user to resize the height of the element */
+    font-family: Georgia,Perpetua, Rockwell Extra Bold; 
+}
+
+/* Hover effect for submit button */
+input[type=submit]:hover {
+	background-color: white; /* Makes the background turn white when hovered over */
+	color: black; /* Makes the font turn black when hovered over */
+	font-weight: bold; /* Makes the font bold when hovered over */
+	transform: scale(1.5); /* Makes the button increase 1.5 times in size */ 
+	transition: transform 1.5s; /* Makes the transform effect last 1.5 seconds from start to finish */
+}
+
+/* Form elememt */
+form { 
+	border-radius: 5px; 
+	background-color: #f2f2f2;
+	padding: 20px;
+	font-family: Georgia,"Trebuchet MS", Optima;
+}
+
+/* Center align element hover effect */
+center:hover {
+	transition: transform 2s;
+	transform: scale(1.1);
+}
+
+/* Paragraph element hover effect */
+p:hover {
+	color: #00004d;	
+    transition: transform 1s;
+	transform: scale(1.01);
+}
+
+/* Heading 1 element hover effect */
+h1:hover {
+	color: black;
+	font-weight: normal; /* Makes the text no longer bold when hovered over */ 
+}
+
+/* Image element hover effects */
+img:hover {
+    transition: transform 1s;
+	transform: scale(1.1);
+}
+
+/* Footer element */
+footer {
+    flex: 1;
+    margin-bottom: -50px;
+	padding: 2%;
+	background-color:white;
+}

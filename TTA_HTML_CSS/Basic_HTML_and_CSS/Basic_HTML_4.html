@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Basic HTML 4</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<!--Creates class attributes-->
+		<style>
+		.font_1 {
+			background-color: black;
+			color: yellow;
+			font-size: large;
+		}
+		.font_2 {
+			background-color: darkblue;
+			color: white;
+			font-size: medium;
+		}
+		.My_style {
+			boder: 5px solid #ff0000;
+			text-shadow: 2px 2px 5px #000;
+			color: #FF6347;
+		}
+		</style>
+		<!--These headers points to class attributes-->
+		<h2 class="font_1">This h2 element is styled per class attribute font_1</h2>
+		<h3 class="font_2">This h3 element is styled per class attribute font_2</h3>
+		<h3 class="font_1">Even though this is an h4 element, it is styled the same as the h2 element because we pointed to the class attribute font_1</h4>
+		<h4 class="My_style">This h4 element is styled per class attribute My_style<h4>
+	</body>
+</html>
