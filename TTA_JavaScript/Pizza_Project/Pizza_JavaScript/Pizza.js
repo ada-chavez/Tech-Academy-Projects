@@ -3,6 +3,7 @@ function getReceipt() {
     //function to function, growing line by line into a full receipt
     var text1 = "<h3>You Ordered:</h3>";
     var runningTotal = 0;
+    var sizeTotal = 0;
     var sizeArray = document.getElementsByClassName("size"); //sets pizza size string to var sizeArray
     for (var i = 0; i < sizeArray.length; i++) {
         if (sizeArray[i].checked) {
@@ -27,34 +28,9 @@ function getReceipt() {
     console.log("size text1: "+text1);
     console.log("subtotal: $"+runningTotal+".00");
     //these variables will get passed on to each function
-    getVeggie(runningTotal,text1);
+    getTopping(runningTotal,text1);
 
 };
-
-//
-function getVeggie(runningTotal, text1) {
-    var veggieTotal = 0;
-    var selectedVeggie = [];
-    var veggieArray = document.getElementsByClassName("veggies");
-    for (var k = 0; k < veggieArray.length; k++) {
-        if (veggieArray[k].checked) {
-            selectedVeggie.push(veggieArray[k].value);
-            console.log("selected veggie item: ("+veggieArray[k].value+")");
-            text1 = text1+veggieArray[k].value+"<br>";
-        }
-    }
-    var veggieCount = selectedVeggie.length; //checks to see how many toppings are selected
-    if (veggieCount > 1 ) {
-        veggieTotal = (veggieCount -1); //makes first topping free
-    } else {
-        veggieTotal = 0;
-    }
-    runningTotal = (runningTotal + veggieTotal);
-    getTopping(runningTotal, text1);
-};
-
-
-
 
 function getTopping(runningTotal, text1) {
     var toppingTotal = 0;
