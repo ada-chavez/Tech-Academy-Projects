@@ -1,0 +1,7 @@
+C:\Users\Victoria\Desktop\Basic_C#_Programs\Assignments\MathConsoleApp\MathConsoleApp\bin\Debug\MathConsoleApp.exe.config
+C:\Users\Victoria\Desktop\Basic_C#_Programs\Assignments\MathConsoleApp\MathConsoleApp\bin\Debug\MathConsoleApp.exe
+C:\Users\Victoria\Desktop\Basic_C#_Programs\Assignments\MathConsoleApp\MathConsoleApp\bin\Debug\MathConsoleApp.pdb
+C:\Users\Victoria\Desktop\Basic_C#_Programs\Assignments\MathConsoleApp\MathConsoleApp\obj\Debug\MathConsoleApp.csprojAssemblyReference.cache
+C:\Users\Victoria\Desktop\Basic_C#_Programs\Assignments\MathConsoleApp\MathConsoleApp\obj\Debug\MathConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\Victoria\Desktop\Basic_C#_Programs\Assignments\MathConsoleApp\MathConsoleApp\obj\Debug\MathConsoleApp.exe
+C:\Users\Victoria\Desktop\Basic_C#_Programs\Assignments\MathConsoleApp\MathConsoleApp\obj\Debug\MathConsoleApp.pdb
