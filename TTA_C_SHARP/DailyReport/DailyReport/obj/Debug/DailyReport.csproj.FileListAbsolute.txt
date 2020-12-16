@@ -5,3 +5,10 @@ C:\Users\Victoria\Desktop\Basic_C#_Programs\DailyReport\DailyReport\obj\Debug\Da
 C:\Users\Victoria\Desktop\Basic_C#_Programs\DailyReport\DailyReport\obj\Debug\DailyReport.csproj.CoreCompileInputs.cache
 C:\Users\Victoria\Desktop\Basic_C#_Programs\DailyReport\DailyReport\obj\Debug\DailyReport.exe
 C:\Users\Victoria\Desktop\Basic_C#_Programs\DailyReport\DailyReport\obj\Debug\DailyReport.pdb
+C:\Users\Victoria\Documents\GitHub\Tech-Academy-Projects\TTA_C_SHARP\DailyReport\DailyReport\bin\Debug\DailyReport.exe.config
+C:\Users\Victoria\Documents\GitHub\Tech-Academy-Projects\TTA_C_SHARP\DailyReport\DailyReport\bin\Debug\DailyReport.exe
+C:\Users\Victoria\Documents\GitHub\Tech-Academy-Projects\TTA_C_SHARP\DailyReport\DailyReport\bin\Debug\DailyReport.pdb
+C:\Users\Victoria\Documents\GitHub\Tech-Academy-Projects\TTA_C_SHARP\DailyReport\DailyReport\obj\Debug\DailyReport.csprojAssemblyReference.cache
+C:\Users\Victoria\Documents\GitHub\Tech-Academy-Projects\TTA_C_SHARP\DailyReport\DailyReport\obj\Debug\DailyReport.csproj.CoreCompileInputs.cache
+C:\Users\Victoria\Documents\GitHub\Tech-Academy-Projects\TTA_C_SHARP\DailyReport\DailyReport\obj\Debug\DailyReport.exe
+C:\Users\Victoria\Documents\GitHub\Tech-Academy-Projects\TTA_C_SHARP\DailyReport\DailyReport\obj\Debug\DailyReport.pdb
